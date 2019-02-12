@@ -1,31 +1,32 @@
+/* eslint-disable no-unused-vars */
 //import libraries for making a component
 import React from 'react';
 import { Text, View } from 'react-native';
 
 //make a component
 const Header = (props) => {
-    const { textStyle, viewStyle } = styles;
+	const { textStyle, viewStyle } = styles;
 
-    return (
-        <View style={viewStyle}>
-           <Text style={textStyle}>{props.headerText}</Text>
-        </View> 
-    );
+	return (
+		<View style={viewStyle}>
+			<Text style={textStyle}>{props.headerText}</Text>
+		</View> 
+	);
 };
 
 const styles = {
-    textStyle: {
-        fontSize: 20,
-        color: '#FFFFFF'
-    },
-    viewStyle: {
-        backgroundColor: '#999999',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: 60,
-        elevation: 10,
-        position: 'relative'
-    }
+	textStyle: {
+		fontSize: 20,
+		color: '#FFFFFF'
+	},
+	viewStyle: {
+		backgroundColor: '#999999',
+		justifyContent: 'center',
+		alignItems: 'center',
+		height: 60,
+		elevation: 10,
+		position: 'relative'
+	}
 };
 
 
